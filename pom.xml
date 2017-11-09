@@ -7,7 +7,7 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>coudApp</name>
+    <name>ROOT</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -66,7 +66,7 @@
     </dependencies>
 
     <build>
-        <finalName>coudApp</finalName>
+        <finalName>ROOT</finalName>
          <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -88,7 +88,7 @@
                      <webResources> 
                           <resource>
                                 <directory>${build.sourceDirectory}</directory>
-                                <targetPath>src/main</targetPath>
+                                <targetPath>src/main/java</targetPath>
                           </resource>
                      </webResources>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
