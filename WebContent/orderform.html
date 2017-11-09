@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- /*  -> Designed for testing and development purposes.
+      *  -> Project to design a small eLogistics prototype.
+      *  -> Development Phase - Premature.
+      *  -> Project Type - Educational.
+      *  -> Institute - University Institute Of Technology, Burdwan University.
+      *  -> Owner/Code file Designer :
+      *             @ Name - Avinash Singh.
+      *             @ Department - Computer Science And Engineering.
+      *             @ Roll.Number - 2014_1016.
+      *             @ Email - N/A.
+      *  -> Copyright Norms - Every piece of code given below
+      *                       has been written by 'Avinash2796'©,
+      *                       and he holds the rights to the file. Not meant to be
+      *                       copied or tampered without prior permission
+      *                       from the author.
+      *  -> Guide - Asst.Proff. Dr. Sumit Gupta.
+      */ -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORDER FORM</title>
+        <meta name="description" content="An interactive webpage for parcel booking ">
+         <link rel="stylesheet" type="text/css" href="stylesheets/orderpage.css"/>
+    </head>
+    <script>
+         function display_alert()
+         {
+
+            alert("Site under construction");
+         }
+    </script>
+   <body>
+    <div>
+    <h1>Order booking Form</h1>
+        <p>Please fill all required fields<br/>Give relevant and genuine information for safe and secure delivery of product.</p>
+    <form id="form1" method="post" action="mainServlet">
+        NAME DETAILS -
+        <br/>
+        First_Name : <input type="text" name="custofname"/>
+        <br/>
+        Last_Name : <input type="text" name="custolname"/>
+        <br/>
+        ADDRESS -
+        <br/>
+        Locality :<input type="text" name="locality"/>
+        <br/>
+        City : <input  type="text" name="city"/>  Pin_Code : <input type="text" name="pin" maxlength="6"/>
+        <br/>
+        State : <input type="text" name="state"/>  Country : <input type="text" name="country">
+       <br/>
+       SELECT A PRODUCT FROM THE LIST -
+       <select name="products">
+         <option> Select </option>
+         <option> Apple iphone 6S</option>
+         <option> Apple MacBook Pro</option>
+         <option> Samsung HD Led Tv</option>
+         <option> Philips Headphone</option>
+       </select>
+       <br/>
+       Mobile No. : <input type="text" name="mobno" maxlength="10"/>
+       <br/>
+       Email ID : <input type="text" name="Email"/>
+       <br/>
+       <input id=btn1 type="submit" name="GO!"/>
+    </form>
+    </div>
+   </body>
+</html>
