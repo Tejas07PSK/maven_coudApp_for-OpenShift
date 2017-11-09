@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- /*  -> Designed for testing and development purposes.
+      *  -> Project to design a small eLogistics prototype.
+      *  -> Development Phase - Premature.
+      *  -> Project Type - Educational.
+      *  -> Institute - University Institute Of Technology, Burdwan University.
+      *  -> Owner/Code file Designer :
+      *             @ Name - Avinash Singh.
+      *             @ Department - Computer Science And Engineering.
+      *             @ Roll.Number - 2014_1016.
+      *             @ Email - N/A.
+      *  -> Copyright Norms - Every piece of code given below
+      *                       has been written by 'Avinash2796'©,
+      *                       and he holds the rights to the file. Not meant to be
+      *                       copied or tampered without prior permission
+      *                       from the author.
+      *  -> Guide - Asst.Proff. Dr. Sumit Gupta.
+      */ -->
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ORDER SUMMARY</title>
+        <meta name="description" content="An interactive webpage for parcel booking ">
+         <link rel="stylesheet" type="text/css" href="stylesheets/ordersummary.css"/>
+    </head>
+    <script>
+         function getParameterByName(name, url)
+         {
+              if (!url) url = window.location.href;
+              name = name.replace(/[\[\]]/g, "\\$&");
+              var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+              results = regex.exec(url);
+              if (!results) return null;
+              if (!results[2]) return '';
+              return decodeURIComponent(results[2].replace(/\+/g, " "));
+         }
+    </script>
+    <body>
+        <h1>Flashcart</h1>
+
+        <div id="od1">
+            <table id="order"  border="1">
+                <tr>
+                    <th colspan="2">OrderId- <script> document.write(getParameterByName("Od_id")); </script></th>
+                </tr>
+                <tr>
+                <td>Product ID</td>
+                    <td><script> document.write(getParameterByName("Pr_id")); </script></td>
+                </tr>
+                <tr>
+                <td>Product Name</td>
+                    <td><script> document.write(getParameterByName("Pr_name")); </script></td>
+
+                </tr>
+                <tr>
+                <td>Customer Name</td>
+                    <td><script> document.write(getParameterByName("Ur_nm")); </script></td>
+
+                </tr>
+                <tr>
+                <td>Customer Id</td>
+                    <td><script> document.write(getParameterByName("Ur_id")); </script></td>
+
+                </tr>
+                <tr>
+                <td>Delivery Address</td>
+                    <td><script> document.write(getParameterByName("Addr")); </script></td>
+
+                </tr>
+                <tr>
+                <td>Order Status</td>
+                    <td><script> document.write(getParameterByName("Stat")); </script></td>
+
+                </tr>
+                <tr>
+                <td>Order Date</td>
+                    <td><script> document.write(getParameterByName("Odt")); </script></td>
+
+                </tr>
+                <tr>
+                <td>Delivery Date</td>
+                    <td><script> document.write(getParameterByName("Ddt")); </script></td>
+
+                </tr>
+
+            </table>
+        </div>
+         <form id="fm1" >
+
+                         <a href="index.html">
+                              <input id="back" type="button" value="Back to Home">
+                         </a>
+                    </form>
+
+    </body>
+</html>
