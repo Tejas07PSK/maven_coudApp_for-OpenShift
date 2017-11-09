@@ -106,7 +106,7 @@ final public class MainServlet extends HttpServlet
 			    	    		    		      + "<body bgcolor=\"#ffffff\">"
 			    	    		    		      + "<h1>FAILED!!! Error Occured_database exception.</h1>"
 			    	    		    		      + "<p>Please click the button to return to the orderpage --> " +cs+"</p>"
-			    	    		    		      + "<a href=\"http://"+ipadd+":8090/coudApp/orderform.html\"><input type=\"button\" value=\"Return\"></a>"
+			    	    		    		      + "<a href=\"http://"+ipadd+":8080/coudApp/orderform.html\"><input type=\"button\" value=\"Return\"></a>"
 			    	    		    		      + "</body></html>");
 			    	    		    out.flush();
 			    	    		    out.close();
@@ -134,7 +134,7 @@ final public class MainServlet extends HttpServlet
 	    	    		    		              + "<body bgcolor=\"#ffffff\">"
 	    	    		    		    	      + "<h1>Order successfully placed!!.</h1>"
 	    	    		    		    	      + "<p>Hi there recurring buyer!!<br/>We have registered your new address.<br/>Please click the button to view your order_summary --></p>"
-	    	    		    		              + "<a href=\"http://"+ipadd+":8090/coudApp/ordersummary.html?Od_id="+oid+"&Pr_id="+pid+"&Pr_name="+pnm+"&Ur_nm="+nm+"&Ur_id="+uid+"&Addr="+address+"&Stat="+st+"&Odt="+odt+"&Ddt="+ddt+"\">"+"<input type=\"button\" value=\"View\"></a>"
+	    	    		    		              + "<a href=\"http://"+ipadd+":8080/coudApp/ordersummary.html?Od_id="+oid+"&Pr_id="+pid+"&Pr_name="+pnm+"&Ur_nm="+nm+"&Ur_id="+uid+"&Addr="+address+"&Stat="+st+"&Odt="+odt+"&Ddt="+ddt+"\">"+"<input type=\"button\" value=\"View\"></a>"
 	    	    		    		    	      + "</body></html>");
 			    	    	        out.flush();
 			    	    		    out.close();
@@ -161,7 +161,7 @@ final public class MainServlet extends HttpServlet
  	    		    		                 + "<body bgcolor=\"#ffffff\">"
  	    		    		    	         + "<h1>Order successfully placed!!.</h1>"
  	    		    		    	         + "<p>Hi there recurring buyer!!<br/>Please click the button to view your order_summary --></p>"
- 	    		    		                 + "<a href=\"http://"+ipadd+":8090/coudApp/ordersummary.html?Od_id="+oid+"&Pr_id="+pid+"&Pr_name="+pnm+"&Ur_nm="+nm+"&Ur_id="+uid+"&Addr="+address+"&Stat="+st+"&Odt="+odt+"&Ddt="+ddt+"\">"+"<input type=\"button\" value=\"View\"></a>"
+ 	    		    		                 + "<a href=\"http://"+ipadd+":8080/coudApp/ordersummary.html?Od_id="+oid+"&Pr_id="+pid+"&Pr_name="+pnm+"&Ur_nm="+nm+"&Ur_id="+uid+"&Addr="+address+"&Stat="+st+"&Odt="+odt+"&Ddt="+ddt+"\">"+"<input type=\"button\" value=\"View\"></a>"
  	    		    		    	         + "</body></html>");
 			    	    	    out.flush();
 			    			    out.close();
@@ -190,7 +190,7 @@ final public class MainServlet extends HttpServlet
     		    		                + "<body bgcolor=\"#ffffff\">"
     		    		    	        + "<h1>Order successfully placed!!.</h1>"
     		    		    	        + "<p>Hi there new user!!<br/>We have registered you in our database.<br/>Please click the button to view your order_summary --></p>"
-    		    		                + "<a href=\"http://"+ipadd+":8090/coudApp/ordersummary.html?Od_id="+oid+"&Pr_id="+pid+"&Pr_name="+pnm+"&Ur_nm="+nm+"&Ur_id="+uid+"&Addr="+address+"&Stat="+st+"&Odt="+odt+"&Ddt="+ddt+"\">"+"<input type=\"button\" value=\"View\"></a>"
+    		    		                + "<a href=\"http://"+ipadd+":8080/coudApp/ordersummary.html?Od_id="+oid+"&Pr_id="+pid+"&Pr_name="+pnm+"&Ur_nm="+nm+"&Ur_id="+uid+"&Addr="+address+"&Stat="+st+"&Odt="+odt+"&Ddt="+ddt+"\">"+"<input type=\"button\" value=\"View\"></a>"
     		    		    	        + "</body></html>");
 			    	      out.flush();
 			  		      out.close();
@@ -209,7 +209,7 @@ final public class MainServlet extends HttpServlet
 	    		    	                + "<h1>ORDER FAILED!!!</h1>"
 	    		    	                + "<p>The mobile number you entered already exists in our system.<br/>"
 	    		    	                + "Please enter anothe mob no..<br/>Please click the button to return to the orderpage --></p>"
-	    		                        + "<a href=\"http://"+ipadd+":8090/coudApp/orderform.html\"><input type=\"button\" value=\"Return\"></a>"
+	    		                        + "<a href=\"http://"+ipadd+":8080/coudApp/orderform.html\"><input type=\"button\" value=\"Return\"></a>"
 	    		    	                + "</body></html>");
 			              out.flush();
 				          out.close();
@@ -222,7 +222,7 @@ final public class MainServlet extends HttpServlet
 	    		    	                + "<h1>ORDER FAILED!!!</h1>"
 	    		    	                + "<p>The email id. you entered already exists in our system.<br/>"
 	    		    	                + "Please enter anothe email id..<br/>Please click the button to return to the orderpage --></p>"
-	    		                        + "<a href=\"http://"+ipadd+":8090/coudApp/orderform.html\"><input type=\"button\" value=\"Return\"></a>"
+	    		                        + "<a href=\"http://"+ipadd+":8080/coudApp/orderform.html\"><input type=\"button\" value=\"Return\"></a>"
 	    		    	                + "</body></html>");
 			              out.flush();
 				          out.close();
@@ -235,7 +235,7 @@ final public class MainServlet extends HttpServlet
 	    		    	                + "<h1>ORDER FAILED!!!</h1>"
 	    		    	                + "<p>The mobile number and email id you entered already exists in our system.<br/>"
 	    		    	                + "Please enter anothe mob no.. and email id..<br/>Please click the button to return to the orderpage --></p>"
-	    		                        + "<a href=\"http://"+ipadd+":8090/coudApp/orderform.html\"><input type=\"button\" value=\"Return\"></a>"
+	    		                        + "<a href=\"http://"+ipadd+":8080/coudApp/orderform.html\"><input type=\"button\" value=\"Return\"></a>"
 	    		    	                + "</body></html>");
 			              out.flush();
 				          out.close();
@@ -247,7 +247,7 @@ final public class MainServlet extends HttpServlet
 	    		                        + "<body bgcolor=\"#ffffff\">"
 	    		    	                + "<h1>FAILED!!! Error Occured_database exception.</h1>"
 	    		    	                + "<p>Please click the button to return to the orderpage --> "+cs+"</p>"
-	    		                        + "<a href=\"http://"+ipadd+":8090/coudApp/orderform.html\"><input type=\"button\" value=\"Return\"></a>"
+	    		                        + "<a href=\"http://"+ipadd+":8080/coudApp/orderform.html\"><input type=\"button\" value=\"Return\"></a>"
 	    		    	                + "</body></html>");
 			              out.flush();
 			              out.close();
